@@ -1,6 +1,40 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 
 const Hero = () => {
+  const Showcase = ({ name, data }) => {
+    return (
+      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-12">
+        <div className="space-y-12">
+          <div className="text-center">
+            <h2 className="text-primary text-3xl font-medium sm:text-4xl">{name}</h2>
+          </div>
+          <ul
+            link="list"
+            className="space-y-8 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+          >
+            {data.map((collection) => (
+              <Link href={`/collections/${collection.link}`} key={collection.name}>
+                <li className="cursor-pointer">
+                  <div className="space-y-4">
+                    <div className="aspect-w-3 aspect-h-1">
+                      <img className="rounded-lg object-cover shadow-lg" src={collection.image} alt="" />
+                    </div>
+                    <div className="space-y-2">
+                      <div className="space-y-1 text-lg font-medium leading-6">
+                        <h3 className="text-center text-white">{collection.name}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <>
       {
@@ -74,8 +108,102 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {
+        // ~ Collection Data
+      }
+      <Showcase name="Top Collections" data={topCollections} />
+
+      <div className="mx-auto max-w-7xl bg-[#134E4A] py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
+        <div className="space-y-12">
+          <div className="text-center">
+            <h2 className="text-primary text-3xl font-medium sm:text-4xl">Coming Soon</h2>
+          </div>
+          <ul
+            link="list"
+            className="space-y-8 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+          >
+            {comingSoon.map((collection) => (
+              <li key={collection.name}>
+                <a href={`${collection.link}`}>
+                  <div className="space-y-4">
+                    <div className="aspect-w-3 aspect-h-1 border-2">
+                      <img className="object-cover shadow-lg" src={collection.image} alt="" />
+                    </div>
+                    <div className="space-y-2">
+                      <div className="space-y-1 text-lg font-medium leading-6">
+                        <h3 className="text-center text-white">{collection.name}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <Showcase name="New Collections" data={newCollections} />
     </>
   )
 }
 
 export default Hero
+
+const topCollections = [
+  {
+    name: 'Classic Savages',
+    link: 'ClassicSavages',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973702347761012767/savteststst.jpg',
+    contractAddress: '0x92c2230863a1773F27729971aDA931934d5c75b9',
+  },
+  {
+    name: 'ETC BAYC',
+    link: 'ETCBAYC',
+    image: 'https://cdn.discordapp.com/attachments/961750363726282802/961753754410029076/classicapebackground.jpeg',
+    contractAddress: '0x59E34EF31049565D041Aec6137F40f518c2D47c1',
+  },
+  {
+    name: 'ETC PUNKS',
+    link: 'ETCPUNKS',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973704017752518676/punsksksks.jpg',
+    contractAddress: '0x273Bc20299976Fb0BA58A991cb60a27E8Cdc8685',
+  },
+]
+
+const comingSoon = [
+  {
+    name: 'ETC MAYC',
+    link: 'https://classNameitter.com/etcbayc',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973701095752880158/maycest.jpg',
+    contractAddress: '0x69ACB3240cce53d6293619e6AF784Fdda777e45d',
+  },
+  {
+    name: 'Classic Samurais',
+    link: 'https://classNameitter.com/classicsamurais',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973701810005114890/samuraitest.jpg',
+  },
+  {
+    name: 'Monkey Doo',
+    link: 'https://classNameitter.com/monkeydoo_nft',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973703306092371968/monkeydooo.jpg',
+  },
+]
+
+const newCollections = [
+  {
+    name: 'Classic Savages',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973702347761012767/savteststst.jpg',
+    contractAddress: '0x92c2230863a1773F27729971aDA931934d5c75b9',
+  },
+  {
+    name: 'ETC BAYC',
+    image: 'https://cdn.discordapp.com/attachments/961750363726282802/961753754410029076/classicapebackground.jpeg',
+    contractAddress: '0x59E34EF31049565D041Aec6137F40f518c2D47c1',
+  },
+  {
+    name: 'ETC PUNKS',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973704017752518676/punsksksks.jpg',
+    contractAddress: '0x273Bc20299976Fb0BA58A991cb60a27E8Cdc8685',
+  },
+]
