@@ -15,11 +15,14 @@ const Nav = () => {
       <Link href="/stats">
         <a>Stats</a>
       </Link>
-      <Link href="/faq">
-        <a>FAQ</a>
-      </Link>
       <Link href="/create">
         <a>Create</a>
+      </Link>
+      <Link href="/faq">
+        <a className="text-emerald-500">FAQ</a>
+      </Link>
+      <Link href="/terms-of-service">
+        <a className="text-emerald-500">Terms</a>
       </Link>
     </div>
   )
