@@ -87,7 +87,7 @@ const Stats = () => {
         {
           // ~ Stats for collections
         }
-        <div className="mt-20 flex w-full justify-start overflow-x-auto  sm:justify-center">
+        <div className="mt-20 flex w-full justify-start overflow-x-auto md:justify-center">
           <div className="flex min-w-max flex-col pr-5">
             <div className="mb-4 font-medium text-emerald-500">#</div>
             {collections.map((collection) => (
