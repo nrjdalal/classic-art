@@ -3,7 +3,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="relative w-screen overflow-x-hidden">
+      <div className="relative h-screen w-screen overflow-x-hidden bg-slate-900 text-white">
         <Component {...pageProps} />
       </div>
     </>
