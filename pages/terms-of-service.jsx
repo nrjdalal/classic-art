@@ -1,6 +1,6 @@
 const TermsOfService = () => {
   return (
-    <div className="container mx-auto max-w-7xl px-4">
+    <div className="container mx-auto max-w-7xl px-4 py-20">
       <div className="my-10 flex flex-col items-center font-bold">
         <h1 className="text-xl">Terms of Service</h1>
         <p className="text-lg">Last Updated: May 10, 2022</p>
