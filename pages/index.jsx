@@ -165,11 +165,11 @@ const Hero = () => {
             {recentPurchases.map((collection) => (
               <li key={collection.name}>
                 <a href={`${collection.name}`}>
-                  <div className="space-y-4">
+                  <div className="relative space-y-4">
                     <div className="aspect-w-3 aspect-h-1 overflow-hidden rounded-3xl border-2">
                       <img className="object-cover shadow-lg" src={collection.image} alt="" />
                     </div>
-                    <div className="space-y-2">
+                    <div className="absolute bottom-4 left-1/2 w-full -translate-x-1/2 space-y-2 bg-black bg-opacity-50 p-2">
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3 className="text-center text-white">{collection.name}</h3>
                         <h3 className="text-center text-white">Purchased by {collection.address}</h3>
