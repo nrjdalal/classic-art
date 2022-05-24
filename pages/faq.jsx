@@ -35,7 +35,7 @@ const faq = () => {
             </svg>
           )}
         </div>
-        <h2 className="text-xl font-semibold text-emerald-500">{title}</h2>
+        <h2 className="text-xl font-semibold text-emerald-400">{title}</h2>
         <p className={`pt-3 ${open ? 'block' : 'hidden'}`}>{content}</p>
       </div>
     )
@@ -45,7 +45,7 @@ const faq = () => {
     <div className="container mx-auto max-w-7xl px-4 py-20">
       <div className="my-10 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-emerald-500">FAQ</h1>
-        <p className="text-lg">All the questions you need answers to!</p>
+        <p className="text-lg">All the questions you need an answer to!</p>
 
         {Questions.map((question) => (
           <FAQs key={question.id} title={question.title} content={question.content} />
