@@ -9,7 +9,7 @@ const TermsOfService = () => {
       {Points.map((point) => (
         <div className="mt-10" key={point.id}>
           <h2 className="text-xl font-semibold text-emerald-500">{point.title.toUpperCase()}</h2>
-          <p className="pt-3">{point.content}</p>
+          <p className="pt-3 text-justify">{point.content}</p>
         </div>
       ))}
     </div>
