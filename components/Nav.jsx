@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Nav = () => {
   return (
-    <div className="flex space-x-2">
+    <div className="flex justify-center space-x-2 bg-black py-2">
       <Link href="/">
         <a>Home</a>
       </Link>
