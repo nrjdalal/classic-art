@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -86,9 +87,83 @@ const Stats = () => {
         {
           // ~ Stats for collections
         }
+        <div className="mt-20 flex w-full justify-start overflow-x-auto  sm:justify-center">
+          <div className="flex min-w-max flex-col pr-5">
+            <div className="mb-4 font-medium text-emerald-500">#</div>
+            {collections.map((collection) => (
+              <div className="my-5 flex h-12 items-center" key={collection.id}>
+                {collection.id}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex min-w-max flex-col items-start px-5">
+            <div className="mb-4 font-medium text-emerald-500">Collection Name</div>
+            {collections.map((collection) => (
+              <div className="my-5 flex h-12 items-center gap-x-3" key={collection.id}>
+                <img className="h-12 w-12 rounded-full" src={collection.image} alt="" />
+                <p>{collection.name}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex min-w-max flex-col items-center px-5">
+            <div className="mb-4 font-medium text-emerald-500">Floor Price</div>
+            {collections.map((collection) => (
+              <div className="my-5 flex h-12 items-center" key={collection.id}>
+                {collection.price}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex min-w-max flex-col items-center px-5">
+            <div className="mb-4 font-medium text-emerald-500">Market Cap</div>
+            {collections.map((collection) => (
+              <div className="my-5 flex h-12 items-center" key={collection.id}>
+                {collection.cap}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex min-w-max flex-col items-center pl-5">
+            <div className="mb-4 font-medium text-emerald-500">Volume Traded</div>
+            {collections.map((collection) => (
+              <div className="my-5 flex h-12 items-center" key={collection.id}>
+                {collection.volume}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
 export default Stats
+
+const collections = [
+  {
+    id: 1,
+    name: 'ClassicSavages',
+    image: 'https://media.discordapp.net/attachments/966074148344451192/974474945537122304/5.jpeg?width=936&height=936',
+    price: '1.5',
+    cap: '$1500',
+    volume: '8.0 ETC',
+  },
+  {
+    id: 2,
+    name: 'LazyLions',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/937796000293216326/LLLogo_copy.png',
+    price: '1.5',
+    cap: '$1500',
+    volume: '8.0 ETC',
+  },
+  {
+    id: 3,
+    name: 'ETCBAYC',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/937796568172621874/IfhWwr5G_400x400.jpg',
+    price: '1.5',
+    cap: '$1500',
+    volume: '8.0 ETC',
+  },
+]
