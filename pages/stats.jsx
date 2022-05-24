@@ -100,9 +100,9 @@ const Stats = () => {
           <div className="flex min-w-max flex-col items-start px-5">
             <div className="mb-4 font-medium text-emerald-500">Collection Name</div>
             {collections.map((collection) => (
-              <div className="my-5 flex h-12 items-center gap-x-3" key={collection.id}>
+              <div className="my-5 flex h-12 cursor-pointer items-center gap-x-3" key={collection.id}>
                 <img className="h-12 w-12 rounded-full" src={collection.image} alt="" />
-                <p>{collection.name}</p>
+                <p className="text-emerald-500">{collection.name}</p>
               </div>
             ))}
           </div>
@@ -125,7 +125,7 @@ const Stats = () => {
             ))}
           </div>
 
-          <div className="flex min-w-max flex-col items-center pl-5">
+          <div className="flex min-w-max flex-col items-end pl-5">
             <div className="mb-4 font-medium text-emerald-500">Volume Traded</div>
             {collections.map((collection) => (
               <div className="my-5 flex h-12 items-center" key={collection.id}>
