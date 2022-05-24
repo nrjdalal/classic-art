@@ -1,14 +1,14 @@
 const TermsOfService = () => {
   return (
     <div className="container mx-auto max-w-7xl px-4 py-20">
-      <div className="my-10 flex flex-col items-center font-bold">
-        <h1 className="text-xl">Terms of Service</h1>
+      <div className="my-10 flex flex-col items-center">
+        <h1 className="text-2xl font-bold text-emerald-500">Terms of Service</h1>
         <p className="text-lg">Last Updated: May 10, 2022</p>
       </div>
 
       {Points.map((point) => (
         <div className="mt-10" key={point.id}>
-          <h2 className="text-lg font-semibold text-emerald-500">{point.title}</h2>
+          <h2 className="text-xl font-semibold text-emerald-500">{point.title.toUpperCase()}</h2>
           <p className="pt-3">{point.content}</p>
         </div>
       ))}
