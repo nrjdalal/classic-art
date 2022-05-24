@@ -1,73 +1,81 @@
-import Head from 'next/head'
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 
-const Home = () => {
+const Hero = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">pages/index.tsx</code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">Find in-depth information about Next.js features and its API.</p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+    <>
+      {
+        // ~ Hero
+      }
+      <main className="mx-auto w-full  sm:mt-8 sm:px-6 lg:px-8">
+        <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+          <div className="absolute inset-0">
+            <img
+              className="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+              alt="People working on laptops"
+            />
+            <div className="absolute inset-0 bg-[#0F766E]  mix-blend-multiply" />
+          </div>
+          <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <h1 className="text-center text-3xl font-semibold text-emerald-500 sm:text-4xl lg:text-5xl">
+              Discover, Collect and Trade NFTs
+            </h1>
+            <h2 className="mt-4 text-center text-2xl font-medium text-white sm:text-3xl lg:text-4xl">
+              ClassicArt is the first and largest fully-fledged NFT marketplace on Ethereum Classic.
+            </h2>
+            <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+              <a
+                href="#"
+                className="flex items-center justify-center rounded-md border border-transparent bg-[#22C55E] bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+              >
+                DISCOVER
+              </a>
+            </div>
+          </div>
         </div>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
+      {
+        // ~ Stats
+      }
+      <div className="pt-12 sm:pt-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl font-semibold text-emerald-500 sm:text-4xl">ClassicArt Stats</h2>
+            <p className="mt-3 text-xl text-white sm:mt-4">
+              ClassicArt is the most advanced NFT Marketplace built on Ethereum Classic
+            </p>
+          </div>
+        </div>
+        <div className="mt-10 pb-12 sm:pb-16">
+          <div className="relative">
+            <div className="relative mx-auto max-w-7xl px-10 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-4xl">
+                <dl className="rounded-lg bg-white pt-10 shadow-lg sm:grid sm:grid-cols-4">
+                  <div className="flex flex-col border-b border-gray-100 p-6 text-center motion-safe:animate-bounce sm:border-0 sm:border-r">
+                    <dt className="order-2 mt-2 text-base font-medium leading-6 text-gray-500">Daily Sales</dt>
+                    <dd className="order-1 text-3xl font-semibold text-emerald-500 ">1</dd>
+                  </div>
+                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center motion-safe:animate-bounce sm:border-0 sm:border-l sm:border-r">
+                    <dt className="order-2 mt-2 text-base font-medium leading-6 text-gray-500">Total Sales</dt>
+                    <dd className="order-1 text-3xl font-semibold text-emerald-500 ">10</dd>
+                  </div>
+                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center motion-safe:animate-bounce sm:border-0 sm:border-l">
+                    <dt className="order-2 mt-2 text-base font-medium leading-6 text-gray-500">Daily ETC volume</dt>
+                    <dd className="order-1 text-3xl font-semibold text-emerald-500 ">11.7999</dd>
+                  </div>
+                  <div className="flex flex-col border-t border-gray-100 p-6 text-center motion-safe:animate-bounce sm:border-0 sm:border-l">
+                    <dt className="order-2 mt-2 text-base font-medium leading-6 text-gray-500">Total ETC volume</dt>
+                    <dd className="order-1 text-3xl font-semibold text-emerald-500 ">11.8999</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
-export default Home
+export default Hero
