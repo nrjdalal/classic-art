@@ -35,22 +35,22 @@ const Stats = () => {
       <div className="my-10 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-emerald-500">Statistics for all collections</h1>
 
-        <div className="mt-10 flex rounded-xl bg-white p-4 font-medium text-emerald-500">
-          <div className="flex flex-col items-center p-4">
+        <div className="mt-10 flex w-full flex-col items-center justify-center rounded-xl bg-white p-4 font-medium text-emerald-500 sm:w-auto sm:flex-row">
+          <div className="flex w-full flex-col items-center p-4 sm:w-48">
             <h2>ETC Market Cap</h2>
             <div className="mt-2 flex items-center text-black">
               <span className="text-xl">$</span>
               <p className="pt-0.5 pl-0.5">{market}</p>
             </div>
           </div>
-          <div className="flex flex-col items-center border-l-2 p-4">
+          <div className="flex w-full flex-col items-center border-t-2 p-4 sm:w-48 sm:border-l-2 sm:border-t-0">
             <h2>ETC Price</h2>
             <div className="mt-2 flex items-center text-black">
               <span className="text-xl">$</span>
               <p className="pt-0.5 pl-0.5">{price}</p>
             </div>
           </div>
-          <div className="flex flex-col items-center border-l-2 p-4">
+          <div className="flex w-full flex-col items-center border-t-2 p-4 sm:w-48 sm:border-l-2 sm:border-t-0">
             <h2>ETC 24h Volume</h2>
             <div className="mt-2 flex items-center text-black">
               <span className="text-xl">$</span>
