@@ -12,11 +12,12 @@ const Nav = () => {
       <Link href="/collections">
         <a>Collections</a>
       </Link>
-      <Link href="/stats">
-        <a>Stats</a>
-      </Link>
       <Link href="/create">
         <a>Create</a>
+      </Link>
+
+      <Link href="/stats">
+        <a className="text-emerald-500">Stats</a>
       </Link>
       <Link href="/faq">
         <a className="text-emerald-500">FAQ</a>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const faq = () => {
+const FAQ = () => {
   const FAQs = ({ id, title, content }) => {
     const [open, setOpen] = useState(false)
 
@@ -55,7 +55,7 @@ const faq = () => {
   )
 }
 
-export default faq
+export default FAQ
 
 const Questions = [
   {
