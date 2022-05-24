@@ -144,6 +144,40 @@ const Hero = () => {
       </div>
 
       <Showcase name="New Collections" data={newCollections} />
+
+      {
+        // ~ Recent Purchases
+      }
+
+      <div className="mx-auto mb-12 max-w-7xl bg-slate-700 py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
+        <div className="space-y-12">
+          <div className="text-center">
+            <h2 className="text-3xl font-medium text-emerald-500 sm:text-4xl">Recent Purchases</h2>
+          </div>
+          <ul
+            link="list"
+            className="space-y-8 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+          >
+            {recentPurchases.map((collection) => (
+              <li key={collection.name}>
+                <a href={`${collection.name}`}>
+                  <div className="space-y-4">
+                    <div className="aspect-w-3 aspect-h-1 overflow-hidden rounded-3xl border-2">
+                      <img className="object-cover shadow-lg" src={collection.image} alt="" />
+                    </div>
+                    <div className="space-y-2">
+                      <div className="space-y-1 text-lg font-medium leading-6">
+                        <h3 className="text-center text-white">{collection.name}</h3>
+                        <h3 className="text-center text-white">Purchased by {collection.address}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </>
   )
 }
@@ -205,5 +239,20 @@ const newCollections = [
     name: 'ETC PUNKS',
     image: 'https://cdn.discordapp.com/attachments/881344193316921398/973704017752518676/punsksksks.jpg',
     contractAddress: '0x273Bc20299976Fb0BA58A991cb60a27E8Cdc8685',
+  },
+]
+
+const recentPurchases = [
+  {
+    id: '1',
+    name: 'Lazy Lions #3780',
+    address: '0xAddress',
+    image: 'https://classicsavages.mypinata.cloud/ipfs/QmZ6byMqy6ejbkVZknYAvgcdZLzXwMerY9B63QXbQhFBJP/3780.png',
+  },
+  {
+    id: '2',
+    name: 'Lazy Lions #1483',
+    address: '0xAddress',
+    image: 'https://classicsavages.mypinata.cloud/ipfs/QmZ6byMqy6ejbkVZknYAvgcdZLzXwMerY9B63QXbQhFBJP/1483.png',
   },
 ]
