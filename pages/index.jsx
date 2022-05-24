@@ -17,9 +17,11 @@ const Hero = () => {
               <Link href={`/collections/${collection.link}`} key={collection.name}>
                 <li className="cursor-pointer">
                   <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-1">
-                      <img className="rounded-lg object-cover shadow-lg" src={collection.image} alt="" />
-                    </div>
+                    <img
+                      className="aspect-[3/1] w-full rounded-lg object-cover object-center shadow-lg"
+                      src={collection.image}
+                      alt=""
+                    />
                     <div className="space-y-2">
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3 className="text-center text-white">{collection.name}</h3>
@@ -127,9 +129,11 @@ const Hero = () => {
               <li key={collection.name}>
                 <a href={`${collection.link}`}>
                   <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-1 border-2">
-                      <img className="object-cover shadow-lg" src={collection.image} alt="" />
-                    </div>
+                    <img
+                      className="aspect-[3/1] w-full rounded-lg border-2 object-cover object-center shadow-lg"
+                      src={collection.image}
+                      alt=""
+                    />
                     <div className="space-y-2">
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3 className="text-center text-white">{collection.name}</h3>
