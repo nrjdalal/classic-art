@@ -1,5 +1,67 @@
 const Index = () => {
-  return <div>Enter</div>
+  return (
+    <div className="container mx-auto max-w-7xl px-4 py-20">
+      <div className="my-10 flex flex-col items-center">
+        <h1 className="text-2xl font-bold text-emerald-500">Top collections in 7 days</h1>
+      </div>
+
+      {
+        // ~ Top Collections
+      }
+      <div className="flex"></div>
+    </div>
+  )
 }
 
 export default Index
+
+const TopCollections = [
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fmedia.discordapp.net%2Fattachments%2F966074148344451192%2F974474945537122304%2F5.jpeg%3Fwidth%3D936%26height%3D936&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F881344193316921398%2F937796000293216326%2FLLLogo_copy.png&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F881344193316921398%2F937796568172621874%2FIfhWwr5G_400x400.jpg&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fmedia.discordapp.net%2Fattachments%2F966074148344451192%2F974732510472863794%2FMAYClogo.jpeg&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F881344193316921398%2F937796758929539152%2FXL2px6iw_400x400.jpg&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fmedia.discordapp.net%2Fattachments%2F966074148344451192%2F973653292917854219%2Fmoonlamalogo.jpeg&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F966074148344451192%2F973654182982737980%2Fclassicgreyslogo.jpeg&w=64&q=75',
+    link: '/',
+  },
+  {
+    name: 'ClassicSavages',
+    image:
+      'https://classicart.io/_next/image?url=https%3A%2F%2Fmedia.discordapp.net%2Fattachments%2F966074148344451192%2F973653929873272872%2Fetcbitpixellogo.jpeg&w=64&q=75',
+    link: '/',
+  },
+]
