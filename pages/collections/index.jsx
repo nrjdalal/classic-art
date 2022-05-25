@@ -11,10 +11,7 @@ const Index = () => {
       }
       <div className="grid items-center justify-center  gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {TopCollections.map((collection) => (
-          <div
-            className="mx-2 flex w-80 items-center gap-4 rounded-2xl bg-slate-700 p-4 sm:w-auto"
-            key={collection.name}
-          >
+          <div className="mx-2 flex w-80 items-center gap-4 rounded-2xl bg-slate-700 p-4 sm:w-auto" key={key}>
             <img className="rounded-full" src={collection.image} alt="" />
             <h2>{collection.name}</h2>
           </div>
