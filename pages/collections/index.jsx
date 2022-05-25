@@ -5,7 +5,6 @@ const Index = () => {
       <div className="my-10 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-emerald-500">Top collections in 7 days</h1>
       </div>
-
       {
         // ~ Top Collections
       }
@@ -19,6 +18,12 @@ const Index = () => {
             <h2>{collection.name}</h2>
           </div>
         ))}
+      </div>
+      {
+        // ~
+      }
+      <div className="my-10 mt-20 flex flex-col items-center">
+        <h1 className="text-2xl font-bold text-emerald-500">All collections</h1>
       </div>
     </div>
   )
