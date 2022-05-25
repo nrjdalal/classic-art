@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 
-const Hero = () => {
+const Index = () => {
   const Showcase = ({ name, data }) => {
     return (
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-12">
@@ -185,7 +185,7 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Index
 
 const topCollections = [
   {
