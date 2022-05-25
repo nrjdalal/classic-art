@@ -10,8 +10,11 @@ const Index = () => {
         // ~ Top Collections
       }
       <div className="grid items-center justify-center  gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {TopCollections.map((collection) => (
-          <div className="mx-2 flex w-80 items-center gap-4 rounded-2xl bg-slate-700 p-4 sm:w-auto" key={key}>
+        {TopCollections.map((collection, key) => (
+          <div className="relative mx-2 flex w-80 items-center gap-4 rounded-2xl bg-slate-700 p-4 sm:w-auto" key={key}>
+            <div className="absolute top-3 left-3 flex h-6 w-6 items-center justify-center rounded-full border-2 border-emerald-500 bg-white text-black">
+              {key + 1}
+            </div>
             <img className="rounded-full" src={collection.image} alt="" />
             <h2>{collection.name}</h2>
           </div>
