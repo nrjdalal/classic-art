@@ -20,10 +20,25 @@ const Index = () => {
         ))}
       </div>
       {
-        // ~
+        // ~ All Collections
       }
       <div className="my-10 mt-20 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-emerald-500">All collections</h1>
+      </div>
+
+      <div className="grid items-center justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {AllCollections.map((collection, key) => (
+          <div
+            className="relative flex w-80 flex-col items-center gap-4 overflow-hidden rounded-2xl bg-slate-700 sm:w-auto"
+            key={key}
+          >
+            <img className="" src={collection.image} alt="" />
+            <div className="line-clamp-3 flex flex-col items-center justify-center gap-3 p-6">
+              <h2 className="text-xl text-emerald-400">{collection.name}</h2>
+              <p>{collection.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
@@ -79,5 +94,29 @@ const TopCollections = [
     image:
       'https://classicart.io/_next/image?url=https%3A%2F%2Fmedia.discordapp.net%2Fattachments%2F966074148344451192%2F973653929873272872%2Fetcbitpixellogo.jpeg&w=64&q=75',
     link: '/',
+  },
+]
+
+const AllCollections = [
+  {
+    name: 'ClassicSavages',
+    description:
+      'ClassicSavage is the first original NFT created on ETC. It is an exclusive, mint-able asset. Only 1,000 of these have been created making them the most rare NFT’s built on the Ethereum Classic blockchain. All of these have been hand drawn by a single artist who has taken their time perfecting each NFT. Each collectable includes the ETC logo further promoting the greatness of the blockchain.',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973702347761012767/savteststst.jpg',
+    price: '8.0',
+  },
+  {
+    name: 'ClassicSavages',
+    description:
+      'ClassicSavage is the first original NFT created on ETC. It is an exclusive, mint-able asset. Only 1,000 of these have been created making them the most rare NFT’s built on the Ethereum Classic blockchain. All of these have been hand drawn by a single artist who has taken their time perfecting each NFT. Each collectable includes the ETC logo further promoting the greatness of the blockchain.',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973702347761012767/savteststst.jpg',
+    price: '8.0',
+  },
+  {
+    name: 'ClassicSavages',
+    description:
+      'ClassicSavage is the first original NFT created on ETC. It is an exclusive, mint-able asset. Only 1,000 of these have been created making them the most rare NFT’s built on the Ethereum Classic blockchain. All of these have been hand drawn by a single artist who has taken their time perfecting each NFT. Each collectable includes the ETC logo further promoting the greatness of the blockchain.',
+    image: 'https://cdn.discordapp.com/attachments/881344193316921398/973702347761012767/savteststst.jpg',
+    price: '8.0',
   },
 ]

@@ -165,7 +165,7 @@ const Index = () => {
               <li key={collection.name}>
                 <a href={`${collection.name}`}>
                   <div className="relative space-y-4">
-                    <div className="aspect-w-3 aspect-h-1 overflow-hidden rounded-3xl border-2">
+                    <div className="aspect-square overflow-hidden rounded-3xl border-2">
                       <img className="object-cover shadow-lg" src={collection.image} alt="" />
                     </div>
                     <div className="absolute bottom-7 left-1/2 w-full -translate-x-1/2 space-y-2 bg-black bg-opacity-70 p-2">

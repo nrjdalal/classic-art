@@ -7,5 +7,10 @@ module.exports = {
       },
     },
   },
-  plugins: ['@tailwindcss/aspect-ratio', '@tailwindcss/forms', '@tailwindcss/line-clamp', '@tailwindcss/typography'],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
