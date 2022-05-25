@@ -6,11 +6,12 @@ const Nav = () => {
       <Link href="/">
         <a className="text-red-500">Home</a>
       </Link>
+      <Link href="/collections">
+        <a className="text-red-500">Collections</a>
+      </Link>
+
       <Link href="/market">
         <a>Market</a>
-      </Link>
-      <Link href="/collections">
-        <a>Collections</a>
       </Link>
       <Link href="/create">
         <a>Create</a>
