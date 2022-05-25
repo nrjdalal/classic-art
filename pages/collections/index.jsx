@@ -33,9 +33,9 @@ const Index = () => {
             key={key}
           >
             <img className="" src={collection.image} alt="" />
-            <div className="flex flex-col items-center justify-center gap-3 p-6 line-clamp-2">
+            <div className="flex flex-col items-center justify-center gap-3 p-6 ">
               <h2 className="text-xl text-emerald-400">{collection.name}</h2>
-              <p>{collection.description}</p>
+              <p className="text-center line-clamp-2">{collection.description}</p>
             </div>
           </div>
         ))}
