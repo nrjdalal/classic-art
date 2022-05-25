@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Index = () => {
   return (
     <div className="container mx-auto max-w-7xl px-4 py-20">
@@ -8,7 +9,14 @@ const Index = () => {
       {
         // ~ Top Collections
       }
-      <div className="flex"></div>
+      <div className="grid items-center justify-center  gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {TopCollections.map((collection) => (
+          <div className="mx-2 flex items-center gap-4 rounded-2xl bg-slate-700 p-4 " key={collection.name}>
+            <img className="rounded-full" src={collection.image} alt="" />
+            <h2>{collection.name}</h2>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
