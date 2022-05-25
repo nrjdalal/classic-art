@@ -4,7 +4,7 @@ import Nav from 'components/Nav'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="font-dmSans relative h-screen w-screen overflow-x-hidden bg-slate-900 leading-5 text-white">
+      <div className="relative h-screen w-screen overflow-x-hidden bg-slate-900 font-dmSans leading-6 text-white">
         <Nav />
         <Component {...pageProps} />
       </div>
