@@ -29,11 +29,11 @@ const Index = () => {
       <div className="grid items-center justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {AllCollections.map((collection, key) => (
           <div
-            className="relative flex w-80 flex-col items-center gap-4 overflow-hidden rounded-2xl bg-slate-700 sm:w-auto"
+            className="relative flex w-80 flex-col items-center gap-4 overflow-hidden rounded-2xl bg-slate-700 pb-4 sm:w-auto"
             key={key}
           >
             <img className="" src={collection.image} alt="" />
-            <div className="line-clamp-3 flex flex-col items-center justify-center gap-3 p-6">
+            <div className="flex flex-col items-center justify-center gap-3 p-6 line-clamp-2">
               <h2 className="text-xl text-emerald-400">{collection.name}</h2>
               <p>{collection.description}</p>
             </div>
