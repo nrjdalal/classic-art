@@ -77,7 +77,7 @@ const Hero = () => {
       <div className="pt-12 sm:pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-semibold text-emerald-500 sm:text-4xl">ClassicArt Stats</h2>
+            <h2 className="text-3xl font-medium text-emerald-500 sm:text-4xl">ClassicArt Stats</h2>
             <p className="mt-3 text-xl text-white sm:mt-4">
               ClassicArt is the most advanced NFT Marketplace built on Ethereum Classic
             </p>
