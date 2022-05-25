@@ -116,7 +116,7 @@ const Hero = () => {
       }
       <Showcase name="Top Collections" data={topCollections} />
 
-      <div className="mx-auto max-w-7xl bg-[#134E4A] py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
+      <div className="mx-auto max-w-7xl bg-slate-700 py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
         <div className="space-y-12">
           <div className="text-center">
             <h2 className="text-3xl font-medium text-emerald-500 sm:text-4xl">Coming Soon</h2>
@@ -152,8 +152,7 @@ const Hero = () => {
       {
         // ~ Recent Purchases
       }
-
-      <div className="mx-auto mb-12 max-w-7xl bg-slate-700 py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
+      <div className="mx-auto mb-12 max-w-7xl bg-teal-900 py-12 px-4 sm:px-6 lg:px-8 lg:py-12 xl:rounded-xl">
         <div className="space-y-12">
           <div className="text-center">
             <h2 className="text-3xl font-medium text-emerald-500 sm:text-4xl">Recent Purchases</h2>
